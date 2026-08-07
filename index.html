@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sunrise Studio - Make awesome things that matter." />
+    <title>Sunrise Studio | Make things that matter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@400;500&display=swap&subset=vietnamese" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { sun: '#ff5a36', ink: '#14211f', cream: '#f6f3ed', moss: '#9aae56' },
+            fontFamily: { display: ['Roboto', 'sans-serif'], body: ['Roboto', 'sans-serif'], mono: ['Roboto', 'sans-serif'] }
+          }
+        }
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Sunrise Studio home"><span>sun</span><b>*</b></a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#about" data-i18n="nav_about">Giới thiệu</a>
+        <a href="#work" data-i18n="nav_work">Dự án</a>
+        <a href="#culture" data-i18n="nav_culture">Văn hóa</a>
+        <a href="#news" data-i18n="nav_news">Tin tức</a>
+      </nav>
+      <div class="header-actions">
+        <div class="language-switcher" role="group" aria-label="Language switcher">
+          <button class="lang active" type="button" data-lang="vi" aria-pressed="true">VI</button>
+          <span>/</span>
+          <button class="lang" type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="header-cta" href="#join" data-i18n="nav_join">Gia nhập đội ngũ <span>↗</span></a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+      </div>
+    </header>
+
+    <div class="mobile-menu" aria-hidden="true">
+      <a href="#about" data-i18n="nav_about">Giới thiệu</a>
+      <a href="#work" data-i18n="nav_work">Dự án</a>
+      <a href="#culture" data-i18n="nav_culture">Văn hóa</a>
+      <a href="#news" data-i18n="nav_news">Tin tức</a>
+      <a href="#join" data-i18n="nav_join">Gia nhập đội ngũ</a>
+      <div class="mobile-language language-switcher" role="group" aria-label="Language switcher">
+        <button class="lang active" type="button" data-lang="vi" aria-pressed="true">VI</button>
+        <span>/</span>
+        <button class="lang" type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span><span data-i18n="hero_eyebrow">DIGITAL CREATIVE STUDIO / 2012 - ∞</span></p>
+          <h1 data-i18n-html="hero_title">MAKE<br /><em>BRIGHT</em> THINGS<br />THAT MATTER.</h1>
+          <p class="hero-description" data-i18n="hero_description">Chúng tôi là một tập thể kiến tạo sản phẩm số, kết hợp công nghệ, sáng tạo và trái tim để mang đến giá trị bền vững.</p>
+          <a href="#about" class="round-link"><span data-i18n="hero_link">KHÁM PHÁ CÂU CHUYỆN CỦA CHÚNG TÔI</span><b>↓</b></a>
+        </div>
+        <div class="hero-art" aria-label="Abstract orange star illustration">
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
+          <div class="asterisk"><span></span><span></span><span></span></div>
+          <p class="hero-marker">01 / INTRODUCTION</p>
+        </div>
+        <div class="hero-bottom"><span data-i18n="hero_scroll">SCROLL TO EXPLORE</span><div class="scroll-line"></div><span>© 2025</span></div>
+      </section>
+
+      <section class="intro section-pad" id="about">
+        <div class="section-label reveal"><span>01</span><span data-i18n="intro_label">CHÚNG TÔI LÀ AI</span></div>
+        <div class="intro-grid">
+          <h2 class="display-title reveal" data-i18n-html="intro_title">CÙNG CÔNG NGHỆ,<br />THẮP LÊN <i>NHỮNG Ý TƯỞNG</i><br />CÓ Ý NGHĨA.</h2>
+          <div class="intro-side reveal">
+            <p data-i18n="intro_copy">Chúng tôi tin những sản phẩm tuyệt vời bắt đầu từ sự thấu cảm. Vì thế, mỗi dự án là một hành trình để những con người khác biệt cùng tạo ra một thay đổi tích cực.</p>
+            <a class="text-link" href="#work"><span data-i18n="intro_link">TÌM HIỂU VỀ SUN*</span><b>↗</b></a>
+          </div>
+        </div>
+        <div class="numbers-row reveal">
+          <div><strong>500<sup>+</sup></strong><span data-i18n="stat_people">CON NGƯỜI ĐỒNG HÀNH</span></div>
+          <div><strong>12</strong><span data-i18n="stat_years">NĂM KIẾN TẠO</span></div>
+          <div><strong>200<sup>+</sup></strong><span data-i18n="stat_partners">ĐỐI TÁC TOÀN CẦU</span></div>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="service-heading section-pad"><div class="section-label light"><span>02</span><span data-i18n="services_label">CHÚNG TÔI LÀM GÌ</span></div><p data-i18n="services_intro">Từ ý tưởng đầu tiên đến một sản phẩm được yêu mến, chúng tôi đồng hành ở mọi điểm chạm.</p></div>
+        <div class="service-grid">
+          <article class="service-card engineering reveal">
+            <div class="card-number">01</div>
+            <div class="service-visual grid-visual"><span></span><span></span><span></span><span></span></div>
+            <p class="card-kicker">DIGITAL PRODUCT</p>
+            <h3 data-i18n-html="service_one_title">Creative<br />&amp; Engineering</h3>
+            <p data-i18n="service_one_copy">Biến những vấn đề phức tạp thành trải nghiệm số trực quan và hữu ích.</p>
+            <a href="#work" class="card-arrow" aria-label="Explore Creative and Engineering">↗</a>
+          </article>
+          <article class="service-card talent reveal">
+            <div class="card-number">02</div>
+            <div class="service-visual people-visual"><span class="person one"></span><span class="person two"></span><span class="person three"></span><span class="sun-dot"></span></div>
+            <p class="card-kicker">GROWTH PARTNER</p>
+            <h3 data-i18n-html="service_two_title">Talent<br />Platform</h3>
+            <p data-i18n="service_two_copy">Kết nối con người, năng lực và cơ hội để cùng tăng trưởng bền vững.</p>
+            <a href="#join" class="card-arrow" aria-label="Explore Talent Platform">↗</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects section-pad" id="work">
+        <div class="projects-top">
+          <div class="section-label reveal"><span>03</span><span data-i18n="projects_label">DỰ ÁN NỔI BẬT</span></div>
+          <h2 class="display-title reveal" data-i18n-html="projects_title">THỬ THÁCH LỚN.<br /><i>HÀNH TRÌNH ĐÁNG NHỚ.</i></h2>
+          <a href="#work" class="pill-link reveal"><span data-i18n="projects_all">XEM TẤT CẢ DỰ ÁN</span><b>↗</b></a>
+        </div>
+        <div id="projectCarousel" class="carousel slide project-carousel reveal" data-bs-ride="carousel" data-bs-interval="5000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <article class="project-slide">
+                <div class="project-image project-image-one"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=85" alt="Team collaboration" /></div>
+                <div class="project-info"><p class="project-index">( 01 / 03 )</p><p class="client">NORTHWIND / JAPAN</p><h3 data-i18n="project_one_title">Một nền tảng tuyển dụng mở ra những cuộc gặp gỡ đúng người, đúng lúc.</h3><a href="#work" class="text-link"><span data-i18n="project_view">XEM CASE STUDY</span><b>↗</b></a></div>
+              </article>
+            </div>
+            <div class="carousel-item">
+              <article class="project-slide">
+                <div class="project-image project-image-two"><img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1400&q=85" alt="Creative workshop" /></div>
+                <div class="project-info"><p class="project-index">( 02 / 03 )</p><p class="client">KURASHI / TOKYO</p><h3 data-i18n="project_two_title">Thiết kế lại trải nghiệm mua sắm quanh nhịp sống rất riêng của mỗi nhà.</h3><a href="#work" class="text-link"><span data-i18n="project_view">XEM CASE STUDY</span><b>↗</b></a></div>
+              </article>
+            </div>
+            <div class="carousel-item">
+              <article class="project-slide">
+                <div class="project-image project-image-three"><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1400&q=85" alt="Presentation meeting" /></div>
+                <div class="project-info"><p class="project-index">( 03 / 03 )</p><p class="client">ORBIT / GLOBAL</p><h3 data-i18n="project_three_title">Khi dữ liệu thể thao trở thành động lực cho một lối sống tích cực.</h3><a href="#work" class="text-link"><span data-i18n="project_view">XEM CASE STUDY</span><b>↗</b></a></div>
+              </article>
+            </div>
+          </div>
+          <div class="project-controls"><button type="button" data-bs-target="#projectCarousel" data-bs-slide="prev" aria-label="Previous project">←</button><span class="carousel-progress"></span><button type="button" data-bs-target="#projectCarousel" data-bs-slide="next" aria-label="Next project">→</button></div>
+        </div>
+      </section>
+
+      <section class="culture" id="culture">
+        <div class="culture-photo"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1600&q=85" alt="Friends spending time together" /><span class="photo-caption">THIS IS HOW WE GROW</span></div>
+        <div class="culture-content section-pad">
+          <div class="section-label light reveal"><span>04</span><span data-i18n="culture_label">CUỘC SỐNG TẠI SUN*</span></div>
+          <h2 class="display-title reveal" data-i18n-html="culture_title">NƠI NIỀM VUI,<br />HỌC HỎI VÀ <i>THÁCH THỨC</i><br />GẶP NHAU.</h2>
+          <div class="culture-values">
+            <div class="value reveal"><span>01</span><div><h3>#ActiveChallenge</h3><p data-i18n="value_one">Chủ động tìm và tạo ra những thử thách mới mỗi ngày.</p></div></div>
+            <div class="value reveal"><span>02</span><div><h3>#ActiveLearn</h3><p data-i18n="value_two">Không ngừng học hỏi để bản thân và cộng đồng cùng đi xa hơn.</p></div></div>
+            <div class="value reveal"><span>03</span><div><h3>#ActiveJoy</h3><p data-i18n="value_three">Lan tỏa năng lượng tích cực trong từng kết nối nhỏ.</p></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="join section-pad" id="join">
+        <div class="join-star" aria-hidden="true">✳</div>
+        <div class="section-label reveal"><span>05</span><span data-i18n="join_label">CƠ HỘI NGHỀ NGHIỆP</span></div>
+        <h2 class="join-title reveal" data-i18n-html="join_title">HÃY ĐẾN VÀ<br /><i>TẠO RA ĐIỀU</i><br />AWESOME CÙNG NHAU.</h2>
+        <div class="join-bottom reveal"><p data-i18n="join_copy">Chúng tôi tìm kiếm những người không ngại đặt câu hỏi, yêu thích việc học và muốn để lại dấu ấn tích cực trong thế giới này.</p><a href="mailto:hello@sunrise.studio" class="join-button"><span data-i18n="join_cta">KHÁM PHÁ VỊ TRÍ PHÙ HỢP</span><b>↗</b></a></div>
+      </section>
+
+      <section class="news section-pad" id="news">
+        <div class="news-heading"><div class="section-label reveal"><span>06</span><span data-i18n="news_label">NHẬT KÝ SUN*</span></div><a class="text-link reveal" href="#news"><span data-i18n="news_all">XEM TẤT CẢ BÀI VIẾT</span><b>↗</b></a></div>
+        <div class="news-list">
+          <a class="news-item reveal" href="#news"><span class="news-date">27.06.2025</span><span class="news-tag" data-i18n="news_tag_one">CULTURE</span><h3 data-i18n="news_one">Học nhanh, làm thật: Một ngày cùng các makers tại Product Day</h3><b>↗</b></a>
+          <a class="news-item reveal" href="#news"><span class="news-date">11.06.2025</span><span class="news-tag" data-i18n="news_tag_two">TECHNOLOGY</span><h3 data-i18n="news_two">Từ ý tưởng đến code: Cách chúng tôi thử nghiệm cùng AI</h3><b>↗</b></a>
+          <a class="news-item reveal" href="#news"><span class="news-date">29.05.2025</span><span class="news-tag" data-i18n="news_tag_three">PEOPLE</span><h3 data-i18n="news_three">Điều gì khiến một đội ngũ có thể đi cùng nhau thật lâu?</h3><b>↗</b></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-main section-pad"><a class="brand footer-brand" href="#top"><span>sun</span><b>*</b></a><p data-i18n-html="footer_tagline">Making bright things<br />that matter.</p><a href="mailto:hello@sunrise.studio" class="footer-email">hello@sunrise.studio <b>↗</b></a></div>
+      <div class="footer-bottom section-pad"><span>© 2025 SUNRISE STUDIO</span><span data-i18n="footer_location">HÀ NỘI · ĐÀ NẴNG · HỒ CHÍ MINH · TOKYO</span><a href="#top" data-i18n="footer_top">LÊN ĐẦU TRANG ↑</a></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
